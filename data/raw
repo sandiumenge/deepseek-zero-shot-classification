@@ -1,0 +1,3 @@
+# This directory contains the raw data files that have not been processed or cleaned. 
+# It serves as the source for your data pipeline. 
+# You can place your raw data files here.
