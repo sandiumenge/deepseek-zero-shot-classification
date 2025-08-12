@@ -1,27 +1,30 @@
-# Bitcoin Tweet Classification
+# Zero-Shot Text Classification
 
-This project aims to classify tweets related to Bitcoin into different categories such as "spam", "bot", or "human". It also analyzes the sentiment and emotions expressed in these tweets. The project is structured to facilitate data processing, analysis, and visualization.
+This project provides a framework for performing **zero-shot classification** on text data, allowing you to assign categories to text without needing task-specific training.  
+It is designed to be flexible, enabling classification for a wide variety of domains such as social media content, customer feedback, product reviews, or news articles.  
 
 ## Project Structure
 
-```
-bitcoin-tweet-classification/
+zero-shot-classification/
 ├── data/
-│   ├── raw/                  # Contains raw data files
-│   └── processed/            # Contains cleaned and processed data files
-├── notebooks/                 # Jupyter Notebooks for analysis
-│   └── data_cleaning_and_analysis.ipynb
-├── src/                      # Source code for the project
-│   ├── __init__.py           # Indicates that src is a package
-│   ├── data_cleaning.py      # Functions for cleaning data
-│   ├── api_requests.py       # Functions for handling API requests
-│   └── visualization.py       # Functions for visualizing data
-├── tests/                    # Unit tests for the project
-│   └── test_data_cleaning.py  # Tests for data cleaning functions
-├── requirements.txt          # Project dependencies
-├── .gitignore                # Files and directories to ignore in Git
-└── README.md                 # Project documentation
-```
+│ ├── raw/ # Contains raw data files
+│ └── processed/ # Contains cleaned and processed data files
+├── notebooks/ # Jupyter Notebooks for analysis
+│ └── data_cleaning_and_analysis.ipynb
+├── src/ # Source code for the project
+│ ├── init.py # Indicates that src is a package
+│ ├── data_cleaning.py # Functions for cleaning and preprocessing data
+│ ├── api_requests.py # Functions for handling API requests or model inference
+│ └── visualization.py # Functions for visualizing data and results
+├── tests/ # Unit tests for the project
+│ └── test_data_cleaning.py # Tests for data cleaning functions
+├── requirements.txt # Project dependencies
+├── .gitignore # Files and directories to ignore in Git
+└── README.md # Project documentation
+
+bash
+Copy
+Edit
 
 ## Installation
 
@@ -29,26 +32,32 @@ To set up the project, clone the repository and install the required packages:
 
 ```bash
 git clone <repository-url>
-cd bitcoin-tweet-classification
+cd zero-shot-classification
 pip install -r requirements.txt
-```
+Usage
+Data Preparation
+Place your raw text data in the data/raw directory. The data cleaning and preprocessing will be handled in the src/data_cleaning.py script.
 
-## Usage
+Data Cleaning and Analysis
+Use the Jupyter Notebook in notebooks/data_cleaning_and_analysis.ipynb for exploratory data analysis and to visualize the cleaning process.
 
-1. **Data Preparation**: Place your raw data files in the `data/raw` directory. The data cleaning and processing will be handled in the `src/data_cleaning.py` script.
+Model Inference / API Requests
+The src/api_requests.py script contains functions to interact with APIs or models that perform zero-shot classification.
 
-2. **Data Cleaning and Analysis**: Use the Jupyter Notebook located in `notebooks/data_cleaning_and_analysis.ipynb` for exploratory data analysis and to visualize the data cleaning process.
+Visualization
+Use the functions in src/visualization.py to create charts and graphs of classification results or data insights.
 
-3. **API Requests**: The `src/api_requests.py` script contains functions to interact with the necessary APIs for fetching additional data or processing the tweets.
+Testing
+Run the tests in tests/test_data_cleaning.py to ensure data cleaning works as expected.
 
-4. **Visualization**: Use the functions in `src/visualization.py` to create visual representations of the data and results.
+Contributing
+Contributions are welcome! Please submit a pull request or open an issue for suggestions or improvements.
 
-5. **Testing**: Run the unit tests located in `tests/test_data_cleaning.py` to ensure that the data cleaning functions work as expected.
+License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-## Contributing
+pgsql
+Copy
+Edit
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Do you want me to also **add an example code snippet** in the usage section so people can instantly see h
