@@ -1,31 +1,31 @@
 # Zero-Shot Classification
 
-Este proyecto provee una implementación genérica de un clasificador zero-shot para tareas de clasificación de texto. Está diseñado para ser adaptable a diferentes dominios y tipos de datos, permitiendo clasificar textos en categorías definidas sin necesidad de entrenamiento supervisado específico para cada caso.
+This project provides a generic implementation of a zero-shot text classification system. It is designed to be adaptable to different domains and types of data, allowing classification of texts into user-defined categories without the need for supervised training on specific classes.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 zero-shot-classification/
 ├── data/
-│   ├── raw/                  # Archivos de datos originales sin procesar
-│   └── processed/            # Archivos de datos limpios y procesados
-├── notebooks/                 # Notebooks para análisis exploratorio y pruebas
+│   ├── raw/                  # Original raw data files
+│   └── processed/            # Cleaned and processed data files
+├── notebooks/                 # Notebooks for exploratory analysis and experimentation
 │   └── example_usage.ipynb
-├── src/                      # Código fuente del proyecto
-│   ├── __init__.py           # Indica que src es un paquete
-│   ├── classifier.py         # Implementación del clasificador zero-shot genérico
-│   ├── data_processing.py    # Funciones para limpieza y preparación de datos
-│   └── utils.py              # Funciones auxiliares varias
-├── tests/                    # Tests unitarios para el código fuente
+├── src/                      # Source code of the project
+│   ├── __init__.py           # Indicates src is a package
+│   ├── classifier.py         # Generic zero-shot classifier implementation
+│   ├── data_processing.py    # Functions for data cleaning and preparation
+│   └── utils.py              # Auxiliary helper functions
+├── tests/                    # Unit tests for the source code
 │   └── test_classifier.py
-├── requirements.txt          # Dependencias del proyecto
-├── .gitignore                # Archivos y carpetas ignoradas por Git
-└── README.md                 # Documentación del proyecto
+├── requirements.txt          # Project dependencies
+├── .gitignore                # Files and directories to ignore in Git
+└── README.md                 # Project documentation
 ```
 
-## Instalación
+## Installation
 
-Para preparar el entorno y ejecutar el proyecto, clona este repositorio e instala las dependencias:
+To set up the environment and run the project, clone the repository and install the required packages:
 
 ```bash
 git clone <repository-url>
@@ -33,22 +33,22 @@ cd zero-shot-classification
 pip install -r requirements.txt
 ```
 
-## Uso
+## Usage
 
-1. **Preparación de datos:** Coloca tus archivos de texto en la carpeta `data/raw`. Utiliza las funciones en `src/data_processing.py` para limpiar y preparar los datos.
+1. **Data Preparation:** Place your text files in the `data/raw` folder. Use functions in `src/data_processing.py` to clean and prepare the data.
 
-2. **Clasificación zero-shot:** Emplea el módulo `src/classifier.py` para realizar la clasificación zero-shot en tus textos, definiendo las etiquetas o categorías de interés.
+2. **Zero-Shot Classification:** Use the `src/classifier.py` module to perform zero-shot classification on your texts, defining the labels or categories you want to classify.
 
-3. **Análisis y experimentación:** Usa los notebooks en `notebooks/` para explorar y probar la funcionalidad del clasificador con distintos datasets y escenarios.
+3. **Exploration and Experimentation:** Utilize the notebooks in the `notebooks/` folder to explore the functionality and test the classifier with different datasets and scenarios.
 
-4. **Testing:** Ejecuta los tests en la carpeta `tests/` para verificar la integridad del código.
+4. **Testing:** Run the unit tests in the `tests/` folder to verify the correctness of the code.
 
-## Contribuciones
+## Contributing
 
-Las contribuciones son bienvenidas. Siéntete libre de abrir issues o pull requests para sugerencias, mejoras o correcciones.
+Contributions are welcome! Feel free to open issues or submit pull requests for suggestions, improvements, or bug fixes.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT — para más detalles consulta el archivo [LICENSE](LICENSE).
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
