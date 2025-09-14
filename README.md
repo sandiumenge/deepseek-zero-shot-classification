@@ -20,7 +20,7 @@ It was also the first project where I use Github as something more than somewher
 To set up the environment and run the project, clone the repository and install the required packages:
 
 ```bash
-git clone https://github.com/sandiumenge/deepseek-zero-shot-classification
+git clone https://github.com/sandiumenge/deepseek-zero-shot-classification.git
 cd deepseek-zero-shot-classification
 pip install -r requirements.txt
 ```
